@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    cursor: pointer;
+    border: 1px solid black;
+}
