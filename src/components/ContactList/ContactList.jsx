@@ -1,22 +1,13 @@
 import Contact from "../Contact/Contact";
 import css from "./ContactList.module.css";
-export default function ContactList({contacts}) {
+export default function ContactList({contacts, deleteContact}) {
   return (
     <ul className={css.container}>
       {contacts.map((contact) => (
         <li key={contact.id} className={css.listItem} >
-            <Contact contact={contact} />    
+            <Contact contact={contact} deleteContact={deleteContact} />    
         </li>
       ))}
     </ul>
   );
 }
-// return (
-//     <ul className={css.container}>
-//       {friends.map((friend) => (
-//         <li key={friend.id}>
-//           <FriendListItem friend={friend} />
-//         </li>
-//       ))}
-//     </ul>
-//   );
